@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>BIOAIR ONE</title>
+<meta name="description" content="BIOAIR ONE. Clean air, designed to belong.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-style="white">
+<header id="hd">
+  <a class="brand" href="#top">BIOAIR<span>ONE</span></a>
+  <nav><a href="#belong" data-i18n="n_product"></a><a href="#tech" data-i18n="n_tech"></a><a href="#pod" data-i18n="n_pod"></a><a href="#mat" data-i18n="n_mat"></a><a href="#faq" data-i18n="n_faq"></a></nav>
+  <div class="hr"><button class="lang" id="lang" aria-label="Language">VI | EN</button><button class="btn sm" data-open data-i18n="reserve"></button></div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-t">
+    <p class="kicker" data-i18n="kicker"></p>
+    <h1 data-i18n="hero_h"></h1>
+    <p class="sub" data-i18n="hero_sub"></p>
+    <div class="row"><button class="btn" data-open data-i18n="reserve_one"></button><a class="btn ghost" href="#belong" data-i18n="explore"></a></div>
+  </div>
+  <div class="hero-img stack" data-stack="room" data-eager></div>
+</section>
+
+<section id="belong" class="sec center">
+  <h2 data-i18n="belong_h"></h2>
+  <p class="lead" data-i18n="belong_p"></p>
+</section>
+
+<section id="mat" class="sec alt split">
+  <div class="tall stack" data-stack="macro"></div>
+  <div class="mat-t">
+    <h2 data-i18n="mat_h"></h2>
+    <div class="seg" role="group"><button data-style-set="white" data-i18n="white"></button><button data-style-set="wood" data-i18n="wood"></button></div>
+    <p class="lead" id="mat-p"></p>
+  </div>
+</section>
+
+<!-- LOOK CLOSER: 2 lớp ảnh (toàn cảnh + macro) crossfade/zoom theo cuộn để mô phỏng camera tiến gần vật liệu -->
+<section id="look" class="look">
+  <div class="stick">
+    <h2 data-i18n="look_h"></h2>
+    <div class="vitrine">
+      <div id="lp-room" class="lp-layer stack" data-stack="room"></div>
+      <div id="lp-macro" class="lp-layer stack" data-stack="macro"></div>
+      <div id="lp-sheen" class="lp-sheen" aria-hidden="true"></div>
+    </div>
+    <p class="cap" id="cap"></p>
+  </div>
+</section>
+
+<section id="pod" class="sec split rev">
+  <div class="mat-t">
+    <h2 data-i18n="pod_h"></h2>
+    <p class="lead" data-i18n="pod_p"></p>
+    <div class="podgrid" id="pods-view"></div>
+  </div>
+  <div class="tall stack" id="pod-preview"></div>
+</section>
+
+<section id="tech" class="sec alt">
+  <div class="center"><h2 data-i18n="tech_h"></h2><p class="lead" data-i18n="tech_p"></p></div>
+  <div class="split in">
+    <div class="tall pimg"><img data-src="inside" alt="BIOAIR ONE" loading="lazy" class="inside"></div>
+    <div>
+      <ol class="parts" id="parts"></ol>
+      <p class="note" data-i18n="concept_note"></p>
+    </div>
+  </div>
+  <ul class="specs" id="specs"></ul>
+  <div class="center">
+    <h2 class="gap" data-i18n="sil_h"></h2>
+    <p class="lead" data-i18n="sil_p"></p>
+    <div class="wave" aria-hidden="true"><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
+  </div>
+</section>
+
+<section id="early" class="sec center">
+  <h2 data-i18n="early_h"></h2>
+  <p class="lead" data-i18n="early_p"></p>
+  <div class="tags"><span data-i18n="edition"></span><span data-i18n="upto"></span><span><em data-i18n="deliv"></em> <b data-delivery></b></span></div>
+  <h3 data-i18n="benefits_h"></h3><ul class="plain" id="ben"></ul>
+  <h3 data-i18n="how_h"></h3><ol class="plain" id="how"></ol>
+</section>
+
+<section id="buy" class="sec alt center">
+  <h2 data-i18n="buy_h"></h2>
+  <p class="big" data-price="price"></p>
+  <p class="lead"><span data-i18n="dep"></span> <b data-price="deposit"></b> &nbsp;·&nbsp; <span data-i18n="deliv"></span> <b data-delivery></b></p>
+  <button class="btn" data-open data-i18n="reserve_y"></button>
+  <p class="small" data-i18n="buy_note"></p>
+  <details class="pol"><summary data-i18n="pol_h"></summary><p data-i18n="pol_p"></p></details>
+</section>
+
+<section id="faq" class="sec"><h2 data-i18n="faq_h"></h2><div id="faq-list" class="faq"></div></section>
+</main>
+
+<footer>
+  <b>BIOAIR ONE</b><p data-i18n="foot"></p>
+  <div class="fl"><a href="#belong" data-i18n="n_product"></a><a href="#tech" data-i18n="n_tech"></a><a href="#buy" data-i18n="reserve"></a><a href="#faq">FAQ</a><a href="#buy" data-i18n="pol_h"></a><a href="#" data-i18n="f_priv"></a><a href="#" data-i18n="f_terms"></a></div>
+  <p class="small" id="ct"></p>
+</footer>
+
+<button class="btn sticky" id="stk" data-open></button>
+
+<dialog id="rs" aria-labelledby="st">
+  <form id="fm" novalidate>
+    <div class="dh">
+      <div><p class="stepof" id="stepof"></p><h3 id="st"></h3></div>
+      <button type="button" class="x" id="cl" aria-label="Close">×</button>
+    </div>
+    <div class="dots" id="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+    <div data-step="1" class="choices" id="c-style"></div>
+    <div data-step="2" class="choices pc" id="c-pod"></div>
+    <div data-step="3">
+      <label><span data-i18n="name"></span><input name="name" autocomplete="name"></label>
+      <label><span data-i18n="phone"></span><input name="phone" type="tel" inputmode="tel" autocomplete="tel"></label>
+      <label><span data-i18n="email"></span><input name="email" type="email" autocomplete="email"></label>
+      <label><span data-i18n="addr"></span><input name="addr" autocomplete="street-address"></label>
+      <label><span data-i18n="city"></span><input name="city"></label>
+      <label><span data-i18n="qty"></span><input name="qty" type="number" min="1" max="10" value="1" inputmode="numeric"></label>
+      <label><span data-i18n="note"></span><textarea name="note" rows="2"></textarea></label>
+    </div>
+    <div data-step="4">
+      <dl class="sum" id="sum"></dl>
+      <div class="bankcard">
+        <img id="qr" alt="QR" class="qr" hidden>
+        <dl class="sum" id="bk"></dl>
+        <div class="row"><button type="button" class="btn ghost sm" id="cp1" data-i18n="copy_acct"></button><button type="button" class="btn ghost sm" id="cp2" data-i18n="copy_cont"></button></div>
+      </div>
+      <label class="file"><span data-i18n="proof"></span><input type="file" name="proof" accept="image/jpeg,image/png"></label>
+      <p class="demo-note" data-i18n="demo_note"></p>
+    </div>
+    <div data-step="5" class="done" id="done"></div>
+    <p class="err" id="err" role="alert"></p>
+    <div class="df"><button type="button" class="btn ghost" id="bk-btn" data-i18n="back"></button><button type="submit" class="btn" id="nx"></button></div>
+  </form>
+</dialog>
+
+<script src="data/config.js"></script>
+<script src="data/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
